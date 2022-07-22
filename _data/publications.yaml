@@ -1,0 +1,34 @@
+papers:
+  - title: "Improving Learning-to-Defer Algorithms Through Fine-Tuning"
+    authors: "<b>Naveen Raman</b>, Michael Yee"
+    venue: "NeurIPS'21 Human and Machine Decisions Workshop"
+    paper_pdf: "https://arxiv.org/abs/2112.10768"
+    selected: y
+    
+  - title: "Eliciting Bias in Question Answering Models through Ambiguity" 
+    authors: "Andrew Mao<sup>‡</sup>, <b>Naveen Raman<sup>‡</sup></b>, Matthew Shu, Eric Li, Franklin Yang, Jordan Boyd-Graber"
+    venue: "EMNLP'21 Machine Reading for Question Answering Workshop" 
+    paper_pdf: "https://aclanthology.org/2021.mrqa-1.9/"
+    code: "https://github.com/axz5fy3e6fq07q13/emnlp_bias"
+    selected: n
+
+  - title: "Data-Driven Methods for Balancing Fairness and Efficiency in Ride-Pooling"
+    authors: "<b>Naveen Raman</b>, Sanket Shah, John Dickerson"
+    venue: "IJCAI'21: International Joint Conference on Artificial Intelligence. 2021."
+    paper_pdf: "https://arxiv.org/abs/2110.03524"
+    code: "https://github.com/naveenr414/ijcai-rideshare"
+    selected: y
+
+  - title: "What more can Entity Linking do for Question Answering"
+    authors: "<b>Naveen Raman</b>, Pedro Rodriguez, Jordan Boyd-Graber"
+    venue: "NeurIPS '20: Human And Machine in-the-Loop Evaluation and Learning Strategies Workshop"
+    paper_pdf: "https://openreview.net/forum?id=grMp1hsIbTg"
+    code: "https://github.com/naveenr414/ijcai-rideshare"
+    selected: n
+    
+  - title: "Stress and Burnout in Open Source: Toward Finding, Understanding, and Mitigating Unhealthy Interactions." 
+    authors: "<b>Naveen Raman</b>, Minxuan Cao, Yulia Tsvetkov, Christian Kaestner, Bogdan Vasilescu"
+    venue: "ICSE '20: International Conference on Software Engineering. 2020 (NIER Track)"
+    paper_pdf: "https://cmustrudel.github.io/papers/raman20toxicity.pdf"
+    code: "https://github.com/CMUSTRUDEL/toxicity-detector"
+    selected: y

@@ -1,172 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title> Naveen Raman</title>
-    
-    <meta name="article:tag" content="">
-    <link rel="stylesheet" type="text/css" href="./files/style.css">    
-    
-    <script type="application/javascript">
-      var doNotTrack = false;
-      if (!doNotTrack) {
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-72495497-1', 'auto');
-        
-        ga('send', 'pageview');
-      }
-    </script>
-    <script async="" src="./files/analytics.js.download"></script>
+---
+layout: default
+title: Home
+---
+<!-- ========== ABOUT ========= -->
+<span class="anchor" id="about"  id="about"></span>
+<div class="docs-section">
+  <h4>About</h4>
+  <p>
+  My research focuses on <b>improving decision making</b> for <b>machine learning</b> systems, with a particular focus on <b>fairness</b>. 
+  This includes work on fairness in rideshare matching algorithms [<a href="https://arxiv.org/abs/2110.03524" target="_blank">IJCAI'21</a>], learning-to-defer algorithms [<a href="https://arxiv.org/abs/2112.10768" target="_blank">NeurIPS'21 WHMD</a>], and fairness in question answering algorithms [<a href="https://aclanthology.org/2021.mrqa-1.9/" target="_blank">EMNLP'21 MRQA</a>]. 
+  I'm particularly interested in the intersection between decision making and healthcare, including causality, treatment matching, and interpretability. 
+  Feel free to reach out and talk to me! 
+  </p>
+</div>
 
-  </head>
+<!-- ========== BIO ========== -->
+<span class="anchor" id="bio"></span>
+<div class="docs-section">
+  <h4>Bio</h4>
+  <p>
+  I am incoming MPhil candidate at Cambridge University, attending on a fully-funded Churchill scholarship, and will be attending the Machine Learning department at Carnegie Mellon in 2023 on an NSF Fellowship. 
+  I received my BS in Computer Science and Math from the University of Maryland and graduated Magna Cum Laude. 
+  During my time at Maryland, I worked with <a href="http://johnpdickerson.com" target="_blank">John Dickerson</a> on fairness in rideshare, and with <a href="http://www.umiacs.umd.edu/user.php?path=jbg" target="_blank">Jordan Boyd-Graber</a> on entity linking algorithms. 
+  During my summers, I worked as an intern at Carnegie Mellon, Meta, and MIT Lincoln Labs. 
+  </p> 
+</div>
 
-  <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
-  <header>
-    
-    <div style="text-align: bottom">
-      <a href="./index.html" style="float: left;" class="namelogo">Naveen Raman</a>
-        &nbsp;&nbsp;<a href="./projects.html" style="color:#777;" class="down">Projects</a>&nbsp;&nbsp;<a href="./reading_list.html" style="color:#777;" class="down">Reading List</a>
-        &nbsp;&nbsp;<a href="./files/Naveen_Raman_CV.pdf" style="color:#777;" class="down">Resume</a>
+
+<!-- ========== PUBLICATIONS ========== -->
+<span class="anchor" id="publications"></span>
+<div class="docs-section">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  </header>
 
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
 
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
 
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
 
-  <div class="content">
-    <h1></h1>
-    <aside></aside>
-    <p><img class="profile-picture" src="files/headshot_4.PNG">
-  </p><p>I’m a senior computer science and math major at the University of Maryland. Currently, I'm working with <a href="http://jpdickerson.com/"> John Dickerson </a> to study fairness in rideshare algorithms and with <a href="http://users.umiacs.umd.edu/~jbg/"> Jordan Boyd-Graber </a> on extending entity linking algorithms to improve question answering. 
-  Next year, I'll be going to the University of Cambridge on a <a href="https://www.churchillscholarship.org/">Churchill Scholarship</a> to study an MPhil in Advanced Computer Science. After the completion of my MPhil, I will be joining the Machine Learning Department at Carnegie Mellon University with an NSF GFRP. </p> 
-  
-  <p>  
-  I am interested in working on problems involving machine learning, artificial intelligence, and mechanism design for applications such as fairness, healthcare, and criminal justice.
-  In particular, I'm interested in the ability of these computational tools to make decisions while preserving fairness, especially in uncertain situations. </p> 
-  
-  <p>You can reach me at nraman1 [at] umd [dot] edu.</p>
-  <br>
-  <h2 id="papers">Papers</h2>
-  <script>
-  function absCHF() {
-      var x = document.getElementById("abs-fairness");
-      if (x.style.display === "none") {
-          x.style.display = "block";
-      } else {
-          x.style.display = "none";
-      }
-  }
-  </script> 
-  <h4 id="conferences">Conferences</h4>
-  <p><strong>Improving Learning-to-Defer Algorithms Through Fine-Tuning
-</strong>
-  <br>
-  Naveen Raman, Michael Yee 
-  <br>
-  <em>NeurIPS WHMD Workshop 2021</em>. 
-  <br> 
-  [<a href="https://arxiv.org/abs/2112.10768">pdf</a>] 
-  </p> 
-  <p><strong>Eliciting Bias in Question Answering Models through Ambiguity</strong>
-  <br>
-  Andrew Mao, Naveen Raman, Matthew Shu, Eric Li, Franklin Yang, Jordan Boyd-Graber 
-  <br>
-  <em>EMNLP MRQA Workshop 2021</em>. 
-  <br> 
-  [<a href="https://aclanthology.org/2021.mrqa-1.9/">pdf</a>] 
-  [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vHALcwMAAAAJ&alert_preview_top_rm=2&citation_for_view=vHALcwMAAAAJ:Tyk-4Ss8FVUC">citation</a>]
-  </p> 
-  <p><strong>Data-Driven Methods for Balancing Fairness and Efficiency in Ride-Pooling.</strong>
-  <br>
-  Naveen Raman, Sanket Shah, John Dickerson 
-  <br>
-  <em>IJCAI 2021</em>. 
-  <br> 
-  [<a href="https://arxiv.org/abs/2110.03524">pdf</a>] 
-  [<a href="https://scholar.google.com/citations?user=vHALcwMAAAAJ&hl=en&oi=ao#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DvHALcwMAAAAJ%26citation_for_view%3DvHALcwMAAAAJ%3AzYLM7Y9cAGgC%26tzom%3D240">citation</a>]
-  </p> 
-  <p><strong>Investigating methods of balancing inequality and efficiency in Ride Pooling.</strong>
-  <br>
-  Naveen Raman
-  <br>
-  <em>Undergraduate Consortium at AAAI 2021</em>. 
-  <br> 
-  [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17985">pdf</a>]
-  [<a href="https://www.youtube.com/watch?v=0E2jPSKyNQk&list=PLIsth1r16Z2MHJ9jItF2MLGzQgAjH8QN8&index=7">video</a>]
-  </p> 
-  <p><strong>Data-Driven Methods for Balancing Fairness and Efficiency in Ride-Pooling.</strong>
-  <br>
-  Naveen Raman, Sanket Shah, John Dickerson 
-  <br>
-  <em>Machine Learning for Economics Policy at NeurIPS 2020</em>. </p>
-  <p><strong>What more can Entity Linking do for Question Answering?</strong>
-  <br>
-  Naveen Raman, Pedro Rodriguez, Jordan Boyd-Graber 
-  <br>
-  <em>HAMLETS Workshop at NeurIPS 2020</em>.
-  <br>
-  [<a href="https://openreview.net/pdf/ada1156667175c1c9067fe894df1f797430f4a54.pdf">pdf</a>] 
-  [<a href="https://openreview.net/forum?id=grMp1hsIbTg">html</a>]
-  [<a href="https://scholar.google.com/citations?user=vHALcwMAAAAJ&hl=en&oi=ao#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DvHALcwMAAAAJ%26citation_for_view%3DvHALcwMAAAAJ%3AzYLM7Y9cAGgC%26tzom%3D240">citation</a>]
-  </p>
-  <p><strong>Stress and Burnout in Open Source: Toward Finding, Understanding, and Mitigating Unhealthy Interactions.</strong>
-  <br>
-  Naveen Raman, Minxuan Cao, Yulia Tsvetkov, Christian Kaestner, Bogdan Vasilescu
-  <br>
-  <em>ICSE 2020 - NIER </em>.
-  <br>
-  [<a href="https://cmustrudel.github.io/papers/raman20toxicity.pdf">pdf</a>]
-  [<a href="https://scholar.google.com/citations?user=vHALcwMAAAAJ&hl=en&oi=ao#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DvHALcwMAAAAJ%26citation_for_view%3DvHALcwMAAAAJ%3AUeHWp8X0CEIC%26tzom%3D240">citation</a>]
-  </p>
-  <p><strong>A Muffin Theorem Generator.</strong>
-  <br>
-  Guangqi Cui, John Dickerson, Naveen Durvasula, William Gasarch, Erik Metz, Jacob Prinz, Naveen Raman, Daniel Smolyak, Sung Hyun Yoo
-  <br>
-  <em>FUN 2018</em>
-  <br>
-  [<a href="https://drops.dagstuhl.de/opus/volltexte/2018/8806/pdf/LIPIcs-FUN-2018-15.pdf">pdf</a>] 
-  [<a href="https://scholar.google.com/citations?user=vHALcwMAAAAJ&hl=en&oi=ao#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DvHALcwMAAAAJ%26citation_for_view%3DvHALcwMAAAAJ%3Au5HHmVD_uO8C%26tzom%3D240">citation</a>] </p>
-  <h4 id="other">Presentations</h4>
-  <p><strong>Entity Linking for Quizbowl.</strong>
-  <br>
-  Naveen Raman, Pedro Rodriguez, Jordan Boyd-Graber 
-  <br>
-  <em>MASC-SLL 2020</em>
-  <br>
-  </p>
-  <h2 id="teaching">Teaching</h2>
-  <h6> Fall 2021 </h6>
-    <ul>
-      <li> <a href="https://www.cs.umd.edu/class/fall2021/cmsc330/"> Organization of Programming Languages </a> </li> 
-      <li> <a href="https://github.com/UMD-CS-STICs/cmsc389o"> Preparation for the Coding Interview </a> (Head TA) </li> 
-    </ul>
-  <h6> Spring 2021 </h6>
-    <ul>
-      <li> <a href="https://www.cs.umd.edu/class/spring2021/cmsc330/"> Organization of Programming Languages </a> </li> 
-      <li> <a href="https://github.com/UMD-CS-STICs/cmsc389o"> Preparation for the Coding Interview </a> (Head TA) </li> 
-    </ul>
-  <h6> Fall 2020 </h6>
-    <ul>
-      <li> <a href="https://www.cs.umd.edu/class/fall2020/cmsc330/"> Organization of Programming Languages </a> </li> 
-      <li> <a href="https://github.com/UMD-CS-STICs/cmsc389o"> Preparation for the Coding Interview </a> </li> 
-    </ul>
-  <h6> Spring 2020 </h6>
-    <ul>
-      <li> <a href="https://www.cs.umd.edu/class/spring2020/cmsc330/"> Organization of Programming Languages </a> </li> 
-      <li> <a href="https://github.com/UMD-CS-STICs/cmsc389o"> Preparation for the Coding Interview </a> </li> 
-    </ul>
-  <h6> Fall 2019 </h6>
-    <ul>
-      <li> <a href="https://www.cs.umd.edu/class/fall2019/cmsc330/"> Organization of Programming Languages </a> </li> 
-    </ul>
-  <h6> Spring 2019 </h6> 
-    <ul>
-      <li> <a href="http://www.cs.umd.edu/class/spring2019/cmsc122-0101/"> Introduction to Web Programming </a> </li> 
-    </ul>
-  
-  <h2 id="hobbies">Hobbies</h2>
-  <p>In my free time, I enjoy playing basketball, <a href="./reading_list.html">reading books</a>, and watching movies.</p>
-  <p></p>
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
+</div>
 
-  </body>
-</html>
+<!-- ========== NEWS ========== -->
+<span class="anchor" id="news"></span>
+<div class="docs-section">
+  <h4>News</h4>
+  <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:300px;">
+    {% for news in site.data.news.news %}
+      <li> <b> {{news.date}} </b> - 
+      
+      {{news.info}}  </li> 
+    {% endfor %} 
+    
+  </UL>
+</div>
+
+<!-- ========== READING ========== -->
+<span class="anchor" id="reading"></span>
+<div class="docs-section">
+  <h4>Reading List</h4>
+  <!-- <p> Scroll for older news </p> -->
+  <div style=" overflow-y: scroll; height:300px;"> 
+    {% for entry in site.data.reading %}
+      <OL style="padding: 2px;">
+        <h5> <b> {{entry.year}} </b> </h5> 
+        {% for book in entry.books %} 
+          <li> <a href="{{book.url}}">{{book.title}}</a> by {{book.author}} </li> 
+        
+        {% endfor %} 
+      </OL>
+
+    {% endfor %} 
+    </div> 
+</div>
+
+<div class="docs-section" id="template">
+    <h4>Acknowledgements</h4>
+    This website is made using a template by <a href="https://github.com/msaveski/www_personal"> Martin Saveski </a> 
+</div>

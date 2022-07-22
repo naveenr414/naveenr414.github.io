@@ -1,0 +1,181 @@
+- year: '2022'
+  books:
+    - title: "The Masters and the Slaves"
+      author: Gilberto Freyre
+      url: https://www.goodreads.com/book/show/1377082.The_Masters_And_The_Slaves
+    - title: "The Last of the Mohicans"
+      author: James Fenimore Cooper
+      url: https://www.goodreads.com/book/show/38296.The_Last_of_the_Mohicans
+    - title: "The Song of Achilles"
+      author: Madeline Miller
+      url: https://www.goodreads.com/book/show/13623848-the-song-of-achilles
+    - title: "The Art of Doing Science and Engineering"
+      author: Richard Hamming
+      url: https://www.goodreads.com/en/book/show/530415.The_Art_of_Doing_Science_and_Engineering
+    - title: "How Markets Fail: The Logic of Economic Calamities"
+      author: John Cassidy
+      url: https://www.goodreads.com/book/show/6691186-how-markets-fail
+    - title: "Freakonomics"
+      author: Steven Levitt
+      url: https://www.goodreads.com/book/show/1202.Freakonomics
+    - title: "About Town"
+      author: Ben Yagoda
+      url: https://www.goodreads.com/book/show/299431.About_Town
+    - title: "When to Rob a Bank"
+      author: Steven Levitt 
+      url: https://www.goodreads.com/book/show/23019295-when-to-rob-a-bank
+    - title: "Superintelligence" 
+      author: Nick Bostrom 
+      url: https://www.goodreads.com/book/show/20527133-superintelligence
+    - title: "Napoleon's Buttons" 
+      author: Jay Burreson 
+      url: https://www.goodreads.com/book/show/141624.Napoleon_s_Buttons
+    - title: "The Summer Game" 
+      author: "Roger Angell" 
+      url: https://www.goodreads.com/book/show/603712.The_Summer_Game
+    - title: "Possible Minds: Twenty five ways of looking at AI"
+      author: "John Brockman"
+      url: https://www.goodreads.com/en/book/show/40338436
+    - title: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking"
+      author: Samin Nosrat
+      url: https://www.goodreads.com/en/book/show/40338436
+    - title: "The Death and Life of Great American Cities"
+      author: Jane Jacobs 
+      url: https://www.goodreads.com/book/show/30833.The_Death_and_Life_of_Great_American_Cities
+      
+- year: '2021'
+  books:
+    - title: "Moby Dick"
+      author: Herman Melville
+      url: https://www.goodreads.com/book/show/153747.Moby_Dick_or_the_Whale
+    - title: "The Varieties of Religious Experiences"
+      author: William James
+      url: https://www.goodreads.com/book/show/28820.The_Varieties_of_Religious_Experience
+    - title: "Rhinoceros"
+      author: Eugene Ionesco
+      url: https://www.goodreads.com/book/show/27736.Rhinoc_ros
+    - title: "Metamorphoses"
+      author: Ovid
+      url: https://www.goodreads.com/book/show/1715.Metamorphoses
+    - title: "Orientalism"
+      author: Edward Said
+      url: https://www.goodreads.com/book/show/355190.Orientalism
+    - title: "At home"
+      author: Bill Bryson
+      url: https://www.goodreads.com/book/show/7507825-at-home
+    - title: "Intermediate Microeconomics: A Modern Approach"
+      author: Hal Varian
+      url: https://www.goodreads.com/book/show/460226.Intermediate_Microeconomics
+    - title: "Botany for Gardners"
+      author: Brian Capon
+      url: https://www.goodreads.com/book/show/594467.Botany_for_Gardeners
+    - title: "The Joy Luck Club"
+      author: Amy Tan
+      url: https://www.goodreads.com/book/show/7763.The_Joy_Luck_Club
+    - title: "Ethics and the Military Profession"
+      author: George Lucas and Rick Rubel
+      url: https://www.goodreads.com/book/show/17805805-ethics-and-the-military-profession
+    - title: "Barry Goldwater"
+      author: Robert Goldberg
+      url: https://www.goodreads.com/book/show/692155.Barry_Goldwater
+    - title: "The American Language"
+      author: H. L. Mencken
+      url: https://www.goodreads.com/book/show/948395.The_American_Language
+    - title: "The Piano Lesson"
+      author: August Wilson
+      url: https://www.goodreads.com/book/show/565978.The_Piano_Lesson
+    - title: "The American Canon"
+      author: Harold Bloom
+      url: https://www.goodreads.com/en/book/show/43681060-the-american-canon
+    - title: "African Dominion"
+      author: Michael Gomez
+      url: https://www.goodreads.com/book/show/34928286-african-dominion
+    - title: "The Golden Bough (Part 1)"
+      author: James Frazer
+      url: https://www.goodreads.com/book/show/408862.The_Golden_Bough
+    - title: "Tales from Shakespeare"
+      author: Charles and Mary Lamb
+      url: https://www.goodreads.com/book/show/42036.Tales_from_Shakespeare
+    - title: "What If"
+      author: Randall Munroe
+      url: https://www.goodreads.com/en/book/show/21413662-what-if-serious-scientific-answers-to-absurd-hypothetical-questions
+    - title: "Go Tell It On the Mountain"
+      author: James Baldwin
+      url: https://www.goodreads.com/book/show/17143.Go_Tell_It_on_the_Mountain
+    - title: "History of Opera"
+      author: Stanley Sadie
+      url: https://www.goodreads.com/book/show/5117488-history-of-opera
+    - title: "The Stores if F. Scott Fitzgerald Volume 5"
+      author: F. Scott Fitzgerald
+      url: https://www.goodreads.com/en/book/show/253339.The_Stories_of_F_Scott_Fitzgerald
+    - title: "Defeat into Victory"
+      author: William Slim
+      url: https://www.goodreads.com/book/show/433797.Defeat_Into_Victory
+- year: '2020'
+  books:
+    - title: "The Story of Art"
+      author: Ernst Gombrich
+      url: https://www.goodreads.com/book/show/222078.The_Story_of_Art
+    - title: "The Iliad"
+      author: Homer
+      url: https://www.goodreads.com/book/show/1371.The_Iliad
+    - title: "The Aeneid"
+      author: Virgil
+      url: https://www.goodreads.com/book/show/12914.The_Aeneid
+    - title: "A History of Japan 1615-1867"
+      author: George Sansom
+      url: https://www.goodreads.com/book/show/194460.A_History_of_Japan_1615_1867
+    - title: "Eichmann in Jerusalem"
+      author: Hannah Ardent
+      url: https://www.goodreads.com/book/show/52090.Eichmann_in_Jerusalem
+    - title: "Macroeconomics"
+      author: George Mankiw
+      url: https://www.goodreads.com/book/show/367587.Macroeconomics
+    - title: "Africa: A Biography of the Continent"
+      author: John Reader
+      url: https://www.goodreads.com/it/book/show/19075389-africa
+    - title: "Black Reconstruction in America 1860-1880"
+      author: W.E.B. Du Bois
+      url: https://www.goodreads.com/book/show/184612.Black_Reconstruction_in_America_1860_1880
+    - title: "The History of Jazz"
+      author: Ted Gioia
+      url: https://www.goodreads.com/book/show/177539.The_History_of_Jazz
+    - title: "Grant"
+      author: Ron Chernow
+      url: https://www.goodreads.com/book/show/34237826-grant
+    - title: "The Library of Greek Mythology"
+      author: Apollodorus
+      url: https://www.goodreads.com/book/show/27410.The_Library_of_Greek_Mythology
+    - title: "Master Harold...and the boys"
+      author: Athol Fugard
+      url: https://www.goodreads.com/book/show/297779.Master_Harold_and_the_boys
+    - title: "A Peace to End All Peace"
+      author: David Fromkin
+      url: https://www.goodreads.com/en/book/show/78107.A_Peace_to_End_All_Peace
+    - title: "China: A History"
+      author: John Keay
+      url: https://www.goodreads.com/book/show/3896708-china
+    - title: "As I Lay Dying"
+      author: William Faulkner
+      url: https://www.goodreads.com/book/show/77013.As_I_Lay_Dying
+    - title: "Darkness at Noon"
+      author: Arthur Koestler
+      url: https://www.goodreads.com/book/show/30672.Darkness_at_Noon
+    - title: "Rosencrantz and Guildenstern are dead"
+      author: Tom Stoppard
+      url: https://www.goodreads.com/book/show/18545.Rosencrantz_and_Guildenstern_Are_Dead
+    - title: "Osman's Dream"
+      author: Caroline Finkel
+      url: https://www.goodreads.com/book/show/361130.Osman_s_Dream
+    - title: "A Brief History the Late Ottoman Empire"
+      author: M Sukru Hanioglu
+      url: https://www.goodreads.com/book/show/2668423-a-brief-history-of-the-late-ottoman-empire
+    - title: "Hegel in 90 Minutes"
+      author: Paul Strathern
+      url: https://www.goodreads.com/book/show/720473.Hegel_in_90_Minutes
+    - title: "Empire of the Mind: A History of Iran"
+      author: Michael Axworthy
+      url: https://www.goodreads.com/book/show/2615255-empire-of-the-mind
+    - title: "The Social Contract"
+      author: Jean-Jacques Rousseau
+      url: https://www.goodreads.com/book/show/12651.The_Social_Contract
