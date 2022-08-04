@@ -42,6 +42,12 @@
     - title: "The Death and Life of Great American Cities"
       author: Jane Jacobs 
       url: https://www.goodreads.com/book/show/30833.The_Death_and_Life_of_Great_American_Cities
+    - title: "Mythologies" 
+      author: Roland Barthes 
+      url: https://www.goodreads.com/book/show/51715.Mythologies
+    - title: "The Sound and the Fury"
+      author: William Faulkner 
+      url: https://www.goodreads.com/book/show/10975.The_Sound_and_the_Fury
       
 - year: '2021'
   books:
@@ -105,7 +111,7 @@
     - title: "History of Opera"
       author: Stanley Sadie
       url: https://www.goodreads.com/book/show/5117488-history-of-opera
-    - title: "The Stores if F. Scott Fitzgerald Volume 5"
+    - title: "The Stories of F. Scott Fitzgerald Volume 5"
       author: F. Scott Fitzgerald
       url: https://www.goodreads.com/en/book/show/253339.The_Stories_of_F_Scott_Fitzgerald
     - title: "Defeat into Victory"
