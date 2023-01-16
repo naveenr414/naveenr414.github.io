@@ -48,7 +48,42 @@
     - title: "The Sound and the Fury"
       author: William Faulkner 
       url: https://www.goodreads.com/book/show/10975.The_Sound_and_the_Fury
-      
+    - title: "The Best American Science and Nature Writing" 
+      author: Sy Montgomery 
+      url: https://www.goodreads.com/en/book/show/43261015 
+    - title: "Bloodlands: Europe Between Hitler and Stalin"
+      author: Timothy Snyder 
+      url: https://www.goodreads.com/book/show/6572270-bloodlands
+    - title: "The Pedagogy of the Oppressed"
+      author: Paulo Freire 
+      url: https://www.goodreads.com/en/book/show/72657
+    - title: "The Bad Side of Books" 
+      author: DH Lawrence 
+      url: https://www.goodreads.com/book/show/45688229-the-bad-side-of-books
+    - title: "Colorless Tsukuru Tazaki" 
+      author: Haruki Murakami 
+      url: https://www.goodreads.com/book/show/41022133-colorless-tsukuru-tazaki-and-his-years-of-pilgrimage 
+    - title: "Death on the Nile" 
+      author: Agatha Christie 
+      url: https://www.goodreads.com/book/show/131359.Death_on_the_Nile
+    - title: "The Argumentative Indian" 
+      author: Amartya Sen 
+      url: https://www.goodreads.com/book/show/10310.The_Argumentative_Indian
+    - title: "The Long Divergence" 
+      author: Timur Kuran 
+      url: https://www.goodreads.com/en/book/show/8768088
+    - title: "Flash Boys" 
+      author: Michael Lewis 
+      url: https://www.goodreads.com/book/show/24724602-flash-boys 
+    - title: "The Bear and the Nightengale" 
+      author: Katherine Arden 
+      url: https://www.goodreads.com/book/show/25489134-the-bear-and-the-nightingale 
+    - title: "Street Gang: The Complete history of Sesame Street" 
+      author: Michael Davis 
+      url: https://www.goodreads.com/book/show/3111697-street-gang 
+    - title: "The Anarchy: The Relentless Rise of the East India Company" 
+      author: Michael Davis 
+      url: https://www.goodreads.com/book/show/50254013-the-anarchy
 - year: '2021'
   books:
     - title: "Moby Dick"
