@@ -1,3 +1,21 @@
+-year: '2023'
+  books: 
+    - title: "Meditations"
+      author: Marcus Aurelius
+      url: https://www.goodreads.com/book/show/30659.Meditations
+    - title: 
+    "Thinking, Fast and Slow"
+      author: Daniel Kahneman
+      url: https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow
+    - title: 
+    "In Cold Blood"
+      author: Truman Capote 
+      url: https://www.goodreads.com/book/show/168642.In_Cold_Blood
+    - title: 
+    "Fear and Loathing in Las Vegas"
+      author: Daniel Kahneman
+      url: https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas?ref=nav_sb_ss_1_26
+
 - year: '2022'
   books:
     - title: "The Masters and the Slaves"
