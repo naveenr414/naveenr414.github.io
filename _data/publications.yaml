@@ -2,7 +2,7 @@ papers:
   - title: "Human Uncertainty in Concept-Based AI Systems"
     authors: "Katherine M. Collins, Matthew Barker, Mateo Espinosa Zarlenga, <b>Naveen Raman</b>, Umang Bhatt, Mateja Jamnik, Ilia Sucholutsky, Adrian Weller, Krishnamurthy Dvijotham"
     venue: "AIES '23" 
-    paper_pdf: "https://arxiv.org/pdf/2303.12872.pdf"
+    paper_pdf: "https://arxiv.org/abs/2303.12872"
     selected: y
 
   - title: "Improving Learning-to-Defer Algorithms Through Fine-Tuning"
