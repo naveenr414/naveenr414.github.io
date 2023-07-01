@@ -10,8 +10,17 @@
       author: Truman Capote 
       url: https://www.goodreads.com/book/show/168642.In_Cold_Blood
     - title: "Fear and Loathing in Las Vegas"
-      author: Daniel Kahneman
-      url: https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas?ref=nav_sb_ss_1_26
+      author: Hunter S. Thompson
+      url: https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas?ref=nav_sb_ss_1_26   
+    - title: "The Better Angels of Our Nature"
+      author: Steven Pinker 
+      url: https://www.goodreads.com/book/show/13543093-the-better-angels-of-our-nature 
+    - title: "Manhattan Transfer"
+      author: John Dos Pasos 
+      url: https://www.goodreads.com/book/show/126587.Manhattan_Transfer
+    - title: "The Brief Wonderous Life of Oscar Wao" 
+      author: Junot Diaz
+      url: https://www.goodreads.com/en/book/show/297673
 - year: '2022'
   books:
     - title: "The Masters and the Slaves"
