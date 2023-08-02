@@ -1,4 +1,12 @@
 news:
+  - date: "August 2023"
+    info: "Started my PhD program at Carnegie Mellon University" 
+  - date: "July 2023" 
+    info: "Graduated from the University of Cambridge" 
+  - date: "May 2023" 
+    info: "I presented our work on concept uncertainty at a Gordon Research Seminar"
+  - date: "May 2023" 
+    info: "<a href='https://arxiv.org/abs/2303.12872'> Our paper on concept uncertainty </a> was accepted into AIES!"
   - date: "October 2022"
     info: "Started school at the University of Cambridge" 
   - date: "May 2022"
