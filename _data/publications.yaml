@@ -1,8 +1,15 @@
 papers:
+  - title: "Do Concept Bottleneck Models Obey Locality?"
+    authors: "<b>Naveen Raman</b>, Mateo Espinosa, Juyeon Heo, Mateja Jamnik"
+    venue: "NeurIPS '23 XAI: Past, Present, and Future Workshop" 
+    paper_pdf: "https://openreview.net/forum?id=F6RPYDUIZr"
+    selected: y
+
   - title: "Human Uncertainty in Concept-Based AI Systems"
     authors: "Katherine M. Collins, Matthew Barker, Mateo Espinosa Zarlenga, <b>Naveen Raman</b>, Umang Bhatt, Mateja Jamnik, Ilia Sucholutsky, Adrian Weller, Krishnamurthy Dvijotham"
     venue: "AIES '23" 
     paper_pdf: "https://arxiv.org/abs/2303.12872"
+    code: "https://github.com/collinskatie/cub-s"
     selected: y
 
   - title: "Improving Learning-to-Defer Algorithms Through Fine-Tuning"

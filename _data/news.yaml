@@ -1,4 +1,6 @@
 news:
+  - date: "November 2023" 
+    info: "<a href='https://openreview.net/forum?id=F6RPYDUIZr'> Our paper on spatial locality </a> was accepted into the NeurIPS workshop on XAI!"
   - date: "August 2023"
     info: "Started my PhD program at Carnegie Mellon University" 
   - date: "July 2023" 
