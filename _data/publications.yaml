@@ -2,7 +2,7 @@ papers:
   - title: "Do Concept Bottleneck Models Obey Locality?"
     authors: "<b>Naveen Raman</b>, Mateo Espinosa, Juyeon Heo, Mateja Jamnik"
     venue: "NeurIPS '23 XAI: Past, Present, and Future Workshop" 
-    paper_pdf: "https://openreview.net/forum?id=F6RPYDUIZr"
+    paper_pdf: "https://arxiv.org/abs/2401.01259"
     selected: y
 
   - title: "Human Uncertainty in Concept-Based AI Systems"
