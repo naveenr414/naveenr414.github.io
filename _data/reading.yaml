@@ -1,3 +1,15 @@
+- year: '2024'
+  books: 
+    -title: "Congo: The Epic History of a People"
+     author: David Van Reybrouck
+     url: https://www.goodreads.com/da/book/show/21112533-congo
+    -title: "Shoe Dog: A Memoir by the Creator of Nike"
+     author: Phil Knight
+     url: https://www.goodreads.com/en/book/show/27220736
+    -title: "Noise: A Flaw in Human Judgement"
+     author: Daniel Kahneman
+     url: https://www.goodreads.com/en/book/show/55339408
+
 - year: '2023'
   books: 
     - title: "Meditations"
