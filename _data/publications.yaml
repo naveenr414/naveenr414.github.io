@@ -39,7 +39,7 @@ papers:
 
   - title: "Data-Driven Methods for Balancing Fairness and Efficiency in Ride-Pooling"
     authors: "<b>Naveen Raman</b>, Sanket Shah, John Dickerson"
-    venue: "IJCAI'21: International Joint Conference on Artificial Intelligence. 2021."
+    venue: "IJCAI '21"
     paper_pdf: "https://arxiv.org/abs/2110.03524"
     code: "https://github.com/naveenr414/ijcai-rideshare"
     selected: y
@@ -53,7 +53,7 @@ papers:
     
   - title: "Stress and Burnout in Open Source: Toward Finding, Understanding, and Mitigating Unhealthy Interactions." 
     authors: "<b>Naveen Raman</b>, Minxuan Cao, Yulia Tsvetkov, Christian Kaestner, Bogdan Vasilescu"
-    venue: "ICSE '20: International Conference on Software Engineering. 2020 (NIER Track)"
+    venue: "ICSE '20 (NIER Track)"
     paper_pdf: "https://cmustrudel.github.io/papers/raman20toxicity.pdf"
     code: "https://github.com/CMUSTRUDEL/toxicity-detector"
     selected: n
