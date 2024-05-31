@@ -1,4 +1,6 @@
 news:
+  - date: "April 2024" 
+    info: "<a href='https://arxiv.org/abs/2405.18217'> Our paper on inter-concept relationships </a> was accepted into ICML!"
   - date: "November 2023" 
     info: "<a href='https://openreview.net/forum?id=F6RPYDUIZr'> Our paper on spatial locality </a> was accepted into the NeurIPS workshop on XAI!"
   - date: "August 2023"

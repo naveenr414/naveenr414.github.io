@@ -1,6 +1,18 @@
 papers:
+  - title: "Global Rewards in Restless Multi-Armed Bandits"
+    authors: "<b>Naveen Raman</b>, Ryan Shi, Fei Fang"
+    venue: "arXiv '24" 
+    paper_pdf: ""
+    selected: y
+
+  - title: "Understanding Inter-Concept Relationships in Concept-Based Models"
+    authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Mateja Jamnik"
+    venue: "ICML '24" 
+    paper_pdf: "https://arxiv.org/abs/2405.18217"
+    selected: y
+
   - title: "Do Concept Bottleneck Models Obey Locality?"
-    authors: "<b>Naveen Raman</b>, Mateo Espinosa, Juyeon Heo, Mateja Jamnik"
+    authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
     venue: "NeurIPS '23 XAI: Past, Present, and Future Workshop" 
     paper_pdf: "https://arxiv.org/abs/2401.01259"
     selected: y
@@ -44,4 +56,4 @@ papers:
     venue: "ICSE '20: International Conference on Software Engineering. 2020 (NIER Track)"
     paper_pdf: "https://cmustrudel.github.io/papers/raman20toxicity.pdf"
     code: "https://github.com/CMUSTRUDEL/toxicity-detector"
-    selected: y
+    selected: n
