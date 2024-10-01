@@ -1,7 +1,12 @@
 papers:
+  - title: "Assortment Optimization for Matching Patients and Providers"
+    authors: "<b>Naveen Raman</b>, Holly Wiberg"
+    venue: "Under Submission" 
+    selected: y
+
   - title: "Global Rewards in Restless Multi-Armed Bandits"
     authors: "<b>Naveen Raman</b>, Ryan Shi, Fei Fang"
-    venue: "arXiv '24" 
+    venue: "NeurIPS '24" 
     paper_pdf: "https://arxiv.org/abs/2406.00738"
     selected: y
 
