@@ -14,12 +14,14 @@ papers:
     authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Mateja Jamnik"
     venue: "ICML '24" 
     paper_pdf: "https://arxiv.org/abs/2405.18217"
+    code: "https://github.com/naveenr414/Concept-Learning"
     selected: y
 
   - title: "Do Concept Bottleneck Models Obey Locality?"
     authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
     venue: "NeurIPS '23 XAI: Past, Present, and Future Workshop" 
     paper_pdf: "https://arxiv.org/abs/2401.01259"
+    code: "https://github.com/naveenr414/Spurious-Concepts" 
     selected: y
 
   - title: "Human Uncertainty in Concept-Based AI Systems"
