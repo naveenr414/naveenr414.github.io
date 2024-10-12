@@ -1,4 +1,9 @@
 papers:
+  - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
+    authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
+    venue: "Under Submission" 
+    selected: y
+
   - title: "Assortment Optimization for Matching Patients and Providers"
     authors: "<b>Naveen Raman</b>, Holly Wiberg"
     venue: "Under Submission" 
@@ -35,7 +40,7 @@ papers:
     authors: "<b>Naveen Raman</b>, Michael Yee"
     venue: "NeurIPS '21 Human and Machine Decisions Workshop"
     paper_pdf: "https://arxiv.org/abs/2112.10768"
-    selected: y
+    selected: n
     
   - title: "Eliciting Bias in Question Answering Models through Ambiguity" 
     authors: "Andrew Mao<sup>‡</sup>, <b>Naveen Raman<sup>‡</sup></b>, Matthew Shu, Eric Li, Franklin Yang, Jordan Boyd-Graber"
@@ -49,7 +54,7 @@ papers:
     venue: "IJCAI '21"
     paper_pdf: "https://arxiv.org/abs/2110.03524"
     code: "https://github.com/naveenr414/ijcai-rideshare"
-    selected: y
+    selected: n
 
   - title: "What more can Entity Linking do for Question Answering"
     authors: "<b>Naveen Raman</b>, Pedro Rodriguez, Jordan Boyd-Graber"
