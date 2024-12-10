@@ -1,4 +1,8 @@
 news:
+  - date: "November 2024" 
+    info: "Gave talks at The Food Rescue Conference and the MARL reading group at UMD"
+  - date: "October 2024" 
+    info: "<a href='https://naveenraman.com/assets/papers/ML4H_2024.pdf'> Our work on patient-provider matching</a> was accepted to ML4H!"
   - date: "October 2024" 
     info: "<a href='https://arxiv.org/abs/2406.00738'> Our paper on global RMABs </a> was accepted into NeurIPS!"
   - date: "April 2024" 

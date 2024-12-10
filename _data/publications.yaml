@@ -6,7 +6,7 @@ papers:
 
   - title: "Assortment Optimization for Matching Patients and Providers"
     authors: "<b>Naveen Raman</b>, Holly Wiberg"
-    venue: "Under Submission" 
+    venue: "ML4H Findings '24" 
     selected: y
 
   - title: "Global Rewards in Restless Multi-Armed Bandits"
