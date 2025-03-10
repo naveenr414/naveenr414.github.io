@@ -1,3 +1,14 @@
+- year: '2025'
+  books: 
+    - title: "Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics"
+      author: Tim Marshall
+      url: https://www.goodreads.com/book/show/25135194-prisoners-of-geography
+    - title: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty"
+      author: Daron Acemoglu
+      url: https://www.goodreads.com/book/show/12158480-why-nations-fail
+    - title: "Wolf Hall"
+      author: Hilary Mantel
+      url: https://www.goodreads.com/book/show/6101138-wolf-hall
 - year: '2024'
   books: 
     - title: "Congo: The Epic History of a People"
@@ -36,8 +47,15 @@
     - title: "Early Indians: The Story of Our Ancestors and Where We Came From"
       author: Tony Joseph
       url: https://www.goodreads.com/book/show/43305406-early-indians
-      
-
+    - title: "The General in His Labyrinth"
+      author: Gabriel Garcia Marquez
+      url: https://www.goodreads.com/book/show/23884.The_General_in_His_Labyrinth
+    - title: "Blind Spots: When Medicine Gets It Wrong, and What It Means for Our Health"
+      author: Marty Makary
+      url: https://www.goodreads.com/book/show/210083661-blind-spots
+    - title: "The Anxious Generation"
+      author: Jonathan Haidt
+      url: https://www.goodreads.com/book/show/171681821-the-anxious-generation
 - year: '2023'
   books: 
     - title: "Meditations"

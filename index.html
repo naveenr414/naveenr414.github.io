@@ -7,7 +7,7 @@ title: Home
   <h4>About</h4>
   <p>
   Hello! I'm a second year PhD student in the Machine Learning Department at Carnegie Mellon University, advised by  <a href="https://feifang.info" target="_blank">Fei Fang</a>, and funded by an NSF Fellowship. 
-  My research focuses on <b> improving decision-making in uncertain environments</b>, including topics such as multi-agent learning, bandit feedback, and sequential resource allocation. 
+  My research focuses on <b> improving decision-making in human environments</b>, including topics such as human-AI collaboration, explainability, and sequential decision-making. 
   My work studies these problems in real-world applications including food sustainability and healthcare. 
   <br /> <br />
   I previously obtained my MPhil in Advanced Computer Science on a Churchill Scholarship, where I worked with <a href="https://www.cl.cam.ac.uk/~mj201/" target="_blank">Mateja Jamnik</a> to understand explainability through concept learning models. 
@@ -25,7 +25,7 @@ title: Home
   <h4>Publications</h4>
 
   <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
+  <sup>*</sup> indicates equal contribution.
   </p>
 
   <ul class="tab-nav">
@@ -54,8 +54,8 @@ title: Home
               <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
             {% endif %}
 
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% if paper.talk %}
+              <a class="button" href="{{ paper.talk }}" target="_blank">Talk</a>
             {% endif %}
 
             {% if paper.code %}
@@ -90,8 +90,8 @@ title: Home
               <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
             {% endif %}
 
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% if paper.talk %}
+              <a class="button" href="{{ paper.talk }}" target="_blank">Talk</a>
             {% endif %}
 
             {% if paper.code %}

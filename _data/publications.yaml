@@ -1,18 +1,39 @@
 papers:
-  - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
-    authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
+  - title: "PeerCoPilot: A Language Model-Powered Assistant for Behavioral Health Organizations"
+    authors: "Gao Mo, <b>Naveen Raman</b>, Megan Chai, Cindy Peng, Shannon Pagdon, Nev Jones, Hong Shen, Peggy Swarbrick, and Fei Fang"
     venue: "Under Submission" 
     selected: y
+
+  - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
+    authors: "Megan Chai*, Cindy Peng*, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
+    venue: "Under Submission" 
+    selected: n
+
+  - title: "Contextual Budget Allocation for Food Rescue Volunteer Engagement"
+    authors: "Ariana Tang, <b>Naveen Raman</b>, Fei Fang, Ryan Shi"
+    venue: "Under Submission" 
+    selected: n
+
+  - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
+    authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
+    venue: "ArXiv '24" 
+    paper_pdf: https://arxiv.org/abs/2410.11212
+    code: https://github.com/secg5/risk_certificate
+    selected: n
 
   - title: "Assortment Optimization for Matching Patients and Providers"
     authors: "<b>Naveen Raman</b>, Holly Wiberg"
     venue: "ML4H Findings '24" 
+    paper_pdf: https://arxiv.org/abs/2502.10353 
+    code: https://github.com/naveenr414/patient-provider
     selected: y
 
   - title: "Global Rewards in Restless Multi-Armed Bandits"
     authors: "<b>Naveen Raman</b>, Ryan Shi, Fei Fang"
     venue: "NeurIPS '24" 
     paper_pdf: "https://arxiv.org/abs/2406.00738"
+    code: https://github.com/naveenr414/food-rescue-rmab
+    talk: https://www.youtube.com/watch?v=BSNxGqOSEF4
     selected: y
 
   - title: "Understanding Inter-Concept Relationships in Concept-Based Models"
@@ -34,7 +55,7 @@ papers:
     venue: "AIES '23" 
     paper_pdf: "https://arxiv.org/abs/2303.12872"
     code: "https://github.com/collinskatie/cub-s"
-    selected: y
+    selected: n
 
   - title: "Improving Learning-to-Defer Algorithms Through Fine-Tuning"
     authors: "<b>Naveen Raman</b>, Michael Yee"
@@ -43,7 +64,7 @@ papers:
     selected: n
     
   - title: "Eliciting Bias in Question Answering Models through Ambiguity" 
-    authors: "Andrew Mao<sup>‡</sup>, <b>Naveen Raman<sup>‡</sup></b>, Matthew Shu, Eric Li, Franklin Yang, Jordan Boyd-Graber"
+    authors: "Andrew Mao*, <b>Naveen Raman*</b>, Matthew Shu, Eric Li, Franklin Yang, Jordan Boyd-Graber"
     venue: "EMNLP '21 Machine Reading for Question Answering Workshop" 
     paper_pdf: "https://aclanthology.org/2021.mrqa-1.9/"
     code: "https://github.com/axz5fy3e6fq07q13/emnlp_bias"
