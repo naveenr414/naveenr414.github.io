@@ -4,6 +4,13 @@ papers:
     venue: "Under Submission" 
     selected: y
 
+  - title: "Do Concept Bottleneck Models Obey Locality?"
+    authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
+    venue: "TMLR '25" 
+    paper_pdf: "https://arxiv.org/abs/2401.01259"
+    code: "https://github.com/naveenr414/Spurious-Concepts" 
+    selected: y
+
   - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
     authors: "Megan Chai<sup>‡</sup>, Cindy Peng<sup>‡</sup>, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
     venue: "Under Submission" 
@@ -16,7 +23,7 @@ papers:
 
   - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
     authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
-    venue: "ArXiv '24" 
+    venue: "ICML '25" 
     paper_pdf: https://arxiv.org/abs/2410.11212
     code: https://github.com/secg5/risk_certificate
     selected: n
@@ -41,13 +48,6 @@ papers:
     venue: "ICML '24" 
     paper_pdf: "https://arxiv.org/abs/2405.18217"
     code: "https://github.com/naveenr414/Concept-Learning"
-    selected: y
-
-  - title: "Do Concept Bottleneck Models Obey Locality?"
-    authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
-    venue: "NeurIPS '23 XAI: Past, Present, and Future Workshop" 
-    paper_pdf: "https://arxiv.org/abs/2401.01259"
-    code: "https://github.com/naveenr414/Spurious-Concepts" 
     selected: y
 
   - title: "Human Uncertainty in Concept-Based AI Systems"
