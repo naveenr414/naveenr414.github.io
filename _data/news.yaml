@@ -1,4 +1,8 @@
 news:
+  - date: "November 2025" 
+    info: "Gaves talks at Harvard, Columbia, UMD, Rutgers, INFORMS, and The Food Rescue Conference"
+  - date: "October 2025" 
+    info: "Our works on food rescue feedback and LLMs for behavioral health were accepted into IAAI!"
   - date: "June 2025" 
     info: "<a href='https://arxiv.org/abs/2401.01259'>Our work on concept locality</a> was accepted into TMLR!"
   - date: "May 2025" 

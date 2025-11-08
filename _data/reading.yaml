@@ -33,6 +33,16 @@
     - title: "The Backyard Bird Chronicles"
       author: Amy Tan
       url: https://www.goodreads.com/book/show/194803881-the-backyard-bird-chronicles
+    - title: "The Design of Everyday Things"
+      author: Donald Norman
+      url: https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things
+    - title: "The Idea Factory: Bell Labs and the Great Age of American Innovation"
+      author: Jon Gertner
+      url: https://www.goodreads.com/book/show/11797471-the-idea-factory
+    - title: "Demon Copperhead" 
+      author: Barbara Kingsolver
+      url: https://www.goodreads.com/book/show/60194162-demon-copperhead 
+
 - year: '2024'
   books: 
     - title: "Congo: The Epic History of a People"

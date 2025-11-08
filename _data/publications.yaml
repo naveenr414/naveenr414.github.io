@@ -1,8 +1,13 @@
 papers:
   - title: "PeerCoPilot: A Language Model-Powered Assistant for Behavioral Health Organizations"
     authors: "Gao Mo<sup>‡</sup>, <b>Naveen Raman</b><sup>‡</sup>, Megan Chai, Cindy Peng, Shannon Pagdon, Nev Jones, Hong Shen, Peggy Swarbrick, and Fei Fang"
-    venue: "Under Submission" 
+    venue: "IAAI '26" 
     selected: y
+
+  - title: "RescueLens: : LLM-Powered Triage and Action on Volunteer Feedback for Food Rescue"
+    authors: "<b>Naveen Raman</b>, Jingwu Tang, Zhiyu Chen, Zheyuan Ryan Shi, Sean Hudson, Ameesh Kapoor, Fei Fang"
+    venue: "IAAI '26" 
+    selected: n
 
   - title: "Do Concept Bottleneck Models Obey Locality?"
     authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
@@ -18,7 +23,7 @@ papers:
 
   - title: "Contextual Budget Allocation for Food Rescue Volunteer Engagement"
     authors: "Ariana Tang, <b>Naveen Raman</b>, Fei Fang, Ryan Shi"
-    venue: "Under Submission" 
+    venue: "NeurIPS'25 MLxOR Workshop" 
     selected: n
 
   - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
