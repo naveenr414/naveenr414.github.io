@@ -1,3 +1,14 @@
+- year: '2026'
+  books: 
+    - title: "James"
+      author: Percival Everett
+      url: https://www.goodreads.com/book/show/173754979-james
+    - title: "In the Search for Modern China"
+      author: Jonathan Spence
+      url: https://www.goodreads.com/book/show/162556.The_Search_For_Modern_China 
+    - title: "When the Going was Good"
+      author: Graydon Carter
+      url: https://www.goodreads.com/book/show/218494525-when-the-going-was-good
 - year: '2025'
   books: 
     - title: "Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics"
@@ -42,6 +53,19 @@
     - title: "Demon Copperhead" 
       author: Barbara Kingsolver
       url: https://www.goodreads.com/book/show/60194162-demon-copperhead 
+    - title: "Demon Copperhead" 
+      author: Barbara Kingsolver
+      url: https://www.goodreads.com/book/show/60194162-demon-copperhead 
+    - title: "Poor Economics"
+      author: Abhijit V. Banerjee and Esther Duflo
+      url: https://www.goodreads.com/book/show/10245602-poor-economics
+    - title: "The Warmth of Other Suns"
+      author: Isabel Wilkerson
+      url: https://www.goodreads.com/book/show/8171378-the-warmth-of-other-suns
+    - title: "AI Empires - Dreams and Nightmares in Sam Altman's OpenAI"
+      author: Karen Hao 
+      url: https://www.goodreads.com/en/book/show/222725518-empire-of-ai 
+    
 
 - year: '2024'
   books: 
