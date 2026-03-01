@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selecting Decision-Relevant Concepts in Reinforcement Learning</title>
+
+  <!-- Bulma (same as Nerfies) -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'],['\\(','\\)']],
+        displayMath: [['$$','$$'],['\\[','\\]']]
+      },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <style>
+    /* ── global ── */
+    body { font-size: 17px; }
+    .content { max-width: 80%; margin: 0 auto; }
+
+    /* ── hero / title block (Nerfies-style) ── */
+    .hero.is-light { background-color: #f5f5f5; }
+    .publication-title {
+      font-family: 'Source Serif 4', Georgia, serif !important;
+      font-weight: 400 !important;
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+    }
+    .publication-authors {
+      font-size: 1.1rem;
+    }
+    .author-block {
+      display: inline-block;
+      margin-right: 0.4em;
+    }
+    .author-block a {
+      color: #363636;
+      border-bottom: 1px solid #ccc;
+      text-decoration: none;
+      transition: color .15s, border-color .15s;
+    }
+    .author-block a:hover { color: #3273dc; border-color: #3273dc; }
+
+    /* venue / conference tag */
+    .venue-tag {
+      display: inline-block;
+      background: #363636;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 11px;
+      border-radius: 4px;
+      margin-bottom: 1.2rem;
+    }
+
+    /* link buttons */
+    .publication-links .button {
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    /* ── body sections ── */
+    .section-body {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .section-body + .section-body {
+      border-top: 1px solid #e8e8e8;
+      padding-top: 3rem;
+    }
+
+    /* section headings use Bulma's .title .is-3 but serif */
+    .section-body h2 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: #222;
+      margin-bottom: 1.1rem;
+      line-height: 1.25;
+    }
+    .section-body h3 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #222;
+      margin: 2rem 0 0.7rem;
+    }
+
+    .section-body p {
+      color: #3a3a3a;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .section-body p:last-child { margin-bottom: 0; }
+
+    /* ── compare boxes ── */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.4rem 0;
+    }
+    .compare-box {
+      background: #f8f8f6;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem 1.1rem;
+    }
+    .compare-box .box-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 0.5rem;
+    }
+    .compare-box p { font-size: 0.95rem; margin-bottom: 0; color: #444; }
+
+    /* ── insight callout ── */
+    .callout {
+      background: #fffbeb;
+      border-left: 3px solid #ca8a04;
+      border-radius: 0 5px 5px 0;
+      padding: 0.9rem 1.1rem;
+      margin: 1.4rem 0;
+      font-size: 1rem;
+      color: #3a3a3a;
+      line-height: 1.65;
+    }
+
+    /* ── figure ── */
+    figure { margin: 1.8rem 0; }
+    figure img {
+      width: 100%; height: auto; display: block;
+      border: 1px solid #e0e0e0; border-radius: 5px;
+    }
+    figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.55;
+    }
+    figcaption strong { color: #444; }
+
+    /* ── TAKEAWAY — distinct styled block ── */
+    .takeaway {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      background: #eef6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 6px;
+      padding: 0.85rem 1.1rem;
+      margin: 0.5rem 0 1.8rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e3a5f;
+      line-height: 1.55;
+    }
+    .takeaway .tk-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ── bibtex / code ── */
+    .bibtex-wrap { position: relative; margin-top: 1rem; }
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      padding: 1.4rem 1.6rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    .copy-btn {
+      position: absolute; top: 9px; right: 9px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.6);
+      font-size: 0.75rem; padding: 3px 9px; border-radius: 4px; cursor: pointer;
+      transition: background .15s;
+    }
+    .copy-btn:hover { background: rgba(255,255,255,.22); color:#fff; }
+    .toast {
+      position: fixed; bottom: 24px; left:50%;
+      transform: translateX(-50%) translateY(8px);
+      background:#222; color:#fff; font-size:.85rem;
+      padding:8px 18px; border-radius:5px;
+      opacity:0; transition:opacity .2s,transform .2s;
+      pointer-events:none; z-index:9999;
+    }
+    .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+    /* ── install badge ── */
+    .install-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 0 1.2rem;
+    }
+    .install-cmd {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      font-family: monospace;
+      font-size: 0.88rem;
+      padding: 7px 16px;
+      border-radius: 5px;
+      letter-spacing: 0.02em;
+      user-select: all;
+    }
+    .install-meta {
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    /* responsive */
+    @media(max-width:580px){
+      .compare-grid { grid-template-columns:1fr; }
+      .publication-title { font-size:1.8rem !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ HERO (Nerfies style) -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <h1 class="title is-1 publication-title">
+            Selecting Decision-Relevant Concepts<br>in Reinforcement Learning
+          </h1>
+
+          <div class="is-size-5 publication-authors" style="margin-bottom:0.5rem;">
+            <span class="author-block"><a href="https://naveenraman.com">Naveen Raman</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://stephmilani.github.io">Stephanie Milani</a><sup>2,3</sup>,</span>
+            <span class="author-block"><a href="https://feifang.info">Fei Fang</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-6" style="color:#777; margin-bottom:1.4rem;">
+            <sup>1</sup>Carnegie Mellon University &nbsp;&middot;&nbsp;
+            <sup>2</sup>New York University &nbsp;&middot;&nbsp;
+            <sup>3</sup>Johns Hopkins University
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/naveenr414/concept_decisions" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://conceptrl.streamlit.app/" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-play-circle"></i></span>
+                  <span>Demo</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════════════════════════════════════════════ END HERO -->
+
+<!-- Pull figure -->
+<div class="section-body">
+  <figure>
+    <img src="static/images/pull_figure.jpg" alt="Decision-relevant concept selection overview">
+    <figcaption>
+      <strong>Concept-based models</strong> rely on a set of decision-relevant concepts that help distinguish
+      between different states, yet currently these concepts are manually selected. Our key insight is that
+      decision-relevant concepts best separate &#8220;different&#8221; states, where difference is defined by their
+      decision consequences. We use this insight to develop algorithms for concept selection with performance guarantees.
+    </figcaption>
+  </figure>
+</div>
+
+<!-- Abstract -->
+<div class="section-body" id="abstract">
+  <h2>Abstract</h2>
+  <p>
+    Concept-based models make predictions via intermediate human-understandable concepts, enabling
+    interpretability and test-time intervention. These models require practitioners to manually select
+    a subset of human-understandable concepts, which is a labor-intensive process. In this work, we propose the
+    <strong>first algorithms for automatic concept selection in sequential decision-making</strong>, which
+    reduces concept engineering, improves performance, and preserves interpretability.
+  </p>
+  <p>
+    Our key insight is that decision-relevant concepts should distinguish between states that induce
+    different optimal actions. We use this insight to design the <strong>Decision-Relevant Selection
+    (DRS) algorithm</strong> and give performance guarantees by connecting concept selection to state
+    abstraction. We empirically demonstrate that DRS (i) automatically reduces the set of concepts to a
+    small set of decision-relevant concepts, (ii) improves the effectiveness of test-time interventions,
+    and (iii) produces policies that match the performance of manually selected concepts.
+  </p>
+</div>
+
+<!-- Why concept selection -->
+<div class="section-body" id="motivation">
+  <h2>Why Does Concept Selection Matter?</h2>
+  <p>
+    Concept-based models route decisions through human-understandable Boolean functions of the state.
+    A concept predictor \(g_{\mathbf{c}}(s) = [c_1(s), \ldots, c_k(s)]\) extracts \(k\) binary features,
+    and a policy \(\pi_{\mathbf{c}}\) maps those features to actions. This design makes models interpretable
+    by construction, allows poor decisions to be traced to specific concept errors, and enables humans to
+    correct mispredicted concepts at test time.
+  </p>
+  <p>
+    Key to these models is the choice of concepts. Practitioners hand-pick a subset of \(k\) concepts from
+    a larger bank of \(K\) candidates, which is an iterative, expert-intensive process.
+    <strong>Which concepts you choose profoundly affects performance.</strong>
+    To see why, consider two candidate concepts for a 4-state navigation task where states 1 and 3 give
+    reward 1, and states 2 and 4 give reward 0:
+  </p>
+
+  <div class="compare-grid">
+    <div class="compare-box">
+      <div class="box-label">&#10003; Decision-Relevant concept</div>
+      <p>\(c_1(s) = \mathbf{1}\{s \bmod 2 = 0\}\)</p>
+      <p style="margin-top:.5rem;">States with the same parity share the same reward. The policy can act optimally for every state.</p>
+    </div>
+    <div class="compare-box">
+      <div class="box-label">&#10007; Decision-Irrelevant concept</div>
+      <p>\(c_2(s) = \mathbf{1}\{s \bmod 3 = 0\}\)</p>
+      <p style="margin-top:.5rem;">States \(s=1\) and \(s=2\) map to the same concept value but have different rewards, forcing a suboptimal action for at least one.</p>
+    </div>
+  </div>
+
+  <p>
+    The right concepts are those that <em>separate states requiring different actions</em>.
+  </p>
+</div>
+
+<!-- The problem -->
+<div class="section-body" id="problem">
+  <h2>The Concept Selection Problem</h2>
+  <p>
+    We formalize concept selection in an infinite-horizon MDP \((\mathcal{S}, \mathcal{A}, P, R, \gamma)\).
+    The goal is to choose at most \(k\) concepts maximizing the performance of the best policy operating on them:
+  </p>
+
+  \[
+    \max_{\mathbf{c}:\,|\mathbf{c}| \le k}\;
+    \mathbb{E}_{s \sim \mathcal{S}}\!\left[
+      Q^{\pi^*_{\mathbf{c}}}\!\bigl(s,\, \pi^*_{\mathbf{c}}(g_{\mathbf{c}}(s))\bigr)
+    \right]
+  \]
+
+  <p>
+    This problem is NP-hard in general. Our key insight is to connect it to the well-studied theory of
+    <strong>state abstractions</strong>. A concept predictor \(g_{\mathbf{c}}\) merges states that share
+    the same concept representation. The quality of this merging is captured by the
+    <em>abstraction error</em>: the largest Q-value gap between any two merged states:
+  </p>
+
+  \[
+    \epsilon(g_{\mathbf{c}}) \;:=\;
+    \max_{\substack{s,\,s':\\ g_{\mathbf{c}}(s)=g_{\mathbf{c}}(s')}}
+    \max_{a}\,\bigl|Q^{\pi^*}(s,a) - Q^{\pi^*}(s',a)\bigr|
+  \]
+
+  <p>
+    Prior work on state abstraction guarantees that the value loss of a policy trained on the abstraction
+    is at most \(2\epsilon/(1-\gamma)^2\). This gives us a tractable surrogate:
+    <strong>minimizing \(\epsilon\) is the right objective for concept selection.</strong>
+  </p>
+
+  <div class="callout">
+    <strong>Core insight:</strong> Concepts are decision-relevant only to the extent that they distinguish
+    states where different actions lead to different outcomes. Minimizing the abstraction error \(\epsilon\)
+    captures exactly this requirement.
+  </div>
+</div>
+
+<!-- Method -->
+<div class="section-body" id="method">
+  <h2>Decision-Relevant Selection (DRS)</h2>
+  <p>
+    We propose an algorithm called decision-relevant selection (DRS) to automatically select concepts. Given a policy \(\pi\) trained on the groundtruth state and estimated Q-values \(Q^\pi\), DRS selects the \(k\) concepts
+    that minimize \(\epsilon(g_{\mathbf{c}})\). Define the <em>Q-distance</em> between two states as
+    \(D_{s,s'} = \max_a |Q^\pi(s,a) - Q^\pi(s',a)|\), which measures how much two states differ
+    from a decision-making standpoint.
+  </p>
+  <p>
+    DRS solves a mixed-integer linear program: binary variables \(x_j\) select concepts, and
+    \(Y_{s,s'}\) indicates whether a state pair is <em>separated</em> by the selected set. The objective
+    minimizes the Q-distance, subject to a budget of \(k\) concepts:
+  </p>
+
+  \[
+    \min_{\mathbf{x},\,\mathbf{Y}}\;
+    \sum_{s,s'} D_{s,s'}\,(1 - Y_{s,s'})
+    \quad\text{s.t.}\quad
+    \sum_j x_j \le k,\quad
+    Y_{s,s'} \le \sum_j x_j\,\mathbf{1}[c_j(s) \ne c_j(s')]
+  \]
+
+  <p>
+    The solution is provably optimal: among all subsets of \(k\) concepts, DRS finds the one
+    achieving minimum \(\epsilon(g_{\mathbf{c}})\).
+  </p>
+
+  <h3>Handling imperfect concept predictors</h3>
+  <p>
+    When concepts are predicted from raw observations with per-concept accuracy, separation
+    is probabilistic. <strong>DRS-log</strong> replaces the hard separation constraint with a
+    log-probability lower bound based on the probability that a noisy predictor preserves a disagreement.
+  </p>
+</div>
+
+<!-- Results -->
+<div class="section-body" id="results">
+  <h2>Experiments</h2>
+  <p>
+    We evaluate DRS and DRS-log against random, variance-based, and greedy baselines with both
+    <em>perfect</em> (oracle) and <em>imperfect</em> (learned) concept predictors.
+  </p>
+
+  <h3>Decision-relevant concepts improve performance</h3>
+
+  <figure>
+    <img src="static/images/basic_comparison_perfect.jpg" alt="Performance comparison with perfect concept predictors">
+    <figcaption>
+      <strong>Perfect concept predictors.</strong> DRS outperforms all baselines in 4 out of 5 environments,
+      achieving up to <strong>+159%</strong> better normalized reward than the next best alternative.
+    </figcaption>
+  </figure>
+
+  <div class="takeaway">
+    <span>&#9654; Takeaway 1: Selecting decision-relevant concepts substantially improves policy performance over naive baselines.</span>
+  </div>
+
+  <figure>
+    <img src="static/images/basic_comparison_imperfect.jpg" alt="Performance comparison with imperfect concept predictors">
+    <figcaption>
+      <strong>Imperfect concept predictors.</strong> DRS and DRS-log are optimal or near-optimal in all
+      environments, with <strong>+58%</strong> improvement in the hardest case.
+    </figcaption>
+  </figure>
+
+  <div class="takeaway">
+    <span>&#9654; Takeaway 2: DRS-log&#8217;s probabilistic formulation gracefully handles noisy concept predictions.</span>
+  </div>
+
+  <h3>Well-selected concepts amplify human intervention</h3>
+  <p>
+    At test time, a user can correct mispredicted concepts. Policies built on more decision-relevant
+    concepts benefit more from the same human effort; correcting one critical concept has an
+    outsized effect on decisions.
+  </p>
+
+  <figure>
+    <img src="static/images/intervention_comparison.jpg" alt="Impact of concept selection on test-time intervention">
+    <figcaption>
+      <strong>Test-time intervention.</strong> DRS achieves the highest reward both before and after
+      human intervention across all four environments, with gains from <strong>+0.5%</strong> in Boxing
+      to <strong>+87%</strong> in MiniGrid.
+    </figcaption>
+  </figure>
+
+  <div class="takeaway">
+    <span>&#9654; Takeaway 3: Decision-relevant concepts improve human&#8211;AI collaboration, not just standalone performance.</span>
+  </div>
+
+  <h3>Automatic selection matches manual expert curation</h3>
+  <p>
+    On the CUB bird classification benchmark, where prior work manually curates 112 out of 312 concepts,
+    DRS replicates that selection using only <strong>80 concepts</strong> while staying within 0.6% of
+    manual performance.
+  </p>
+
+  <div class="takeaway">
+    <span>&#9654; Takeaway 4: DRS can reduce manual concept engineering efforts.</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ QUICK START -->
+<div class="section-body" id="quickstart">
+  <h2>Quick Start</h2>
+  <p>
+    Clone the repo and install the conda environment, then pass your trained policy,
+    concept functions, and environment to get back the indices of the selected
+    concepts&mdash;no manual curation required.
+  </p>
+
+  <div class="install-row">
+    <span class="install-cmd">git clone https://github.com/naveenr414/concept_decisions &amp;&amp; bash install.sh</span>
+  </div>
+
+  <div class="bibtex-wrap">
+    <button class="copy-btn" onclick="copyCode()">Copy</button>
+<pre id="code-text"><span style="color:#c586c0">import</span> <span style="color:#9cdcfe">concept_abstraction</span> <span style="color:#c586c0">as</span> <span style="color:#9cdcfe">ca</span>
+<span style="color:#c586c0">from</span> <span style="color:#9cdcfe">concept_abstraction.training</span> <span style="color:#c586c0">import</span> <span style="color:#9cdcfe">train_ppo</span>
+<span style="color:#c586c0">from</span> <span style="color:#9cdcfe">concept_abstraction.concept_bank</span> <span style="color:#c586c0">import</span> <span style="color:#9cdcfe">get_concepts</span>
+<span style="color:#c586c0">from</span> <span style="color:#9cdcfe">concept_abstraction.environments</span> <span style="color:#c586c0">import</span> <span style="color:#9cdcfe">get_environment</span>
+<span style="color:#9cdcfe">SEED</span> = <span style="color:#b5cea8">42</span>
+<span style="color:#9cdcfe">ENV</span>  = <span style="color:#ce9178">"mini_grid"</span>
+<span style="color:#6a9955"># ── 1. Build the MiniGrid environment ────────────────────────────────────────</span>
+<span style="color:#9cdcfe">concepts</span>, <span style="color:#9cdcfe">_</span> = <span style="color:#9cdcfe">get_concepts</span>(<span style="color:#9cdcfe">ENV</span>)
+<span style="color:#9cdcfe">vec_env</span>, <span style="color:#9cdcfe">gym_env</span> = <span style="color:#9cdcfe">get_environment</span>(<span style="color:#9cdcfe">ENV</span>, <span style="color:#9cdcfe">concept_list</span>=<span style="color:#569cd6">None</span>, <span style="color:#9cdcfe">seed</span>=<span style="color:#9cdcfe">SEED</span>)
+<span style="color:#6a9955"># ── 2. Train the base policy (pi*) ───────────────────────────────────────────</span>
+<span style="color:#9cdcfe">policy</span> = <span style="color:#9cdcfe">train_ppo</span>(
+    <span style="color:#9cdcfe">vec_env</span>,
+    <span style="color:#9cdcfe">ENV</span>,
+    <span style="color:#9cdcfe">seed</span>=<span style="color:#9cdcfe">SEED</span>,
+    <span style="color:#9cdcfe">total_timesteps</span>=<span style="color:#b5cea8">250_000</span>,
+    <span style="color:#9cdcfe">policy</span>=<span style="color:#ce9178">"CnnPolicy"</span>,
+)
+<span style="color:#9cdcfe">idx</span> = <span style="color:#9cdcfe">ca</span>.DRS(<span style="color:#9cdcfe">policy</span>, <span style="color:#9cdcfe">concepts</span>, <span style="color:#9cdcfe">gym_env</span>, <span style="color:#9cdcfe">k</span>=<span style="color:#b5cea8">5</span>)
+<span style="color:#9cdcfe">selected</span> = [<span style="color:#9cdcfe">concepts</span>[<span style="color:#9cdcfe">i</span>] <span style="color:#c586c0">for</span> <span style="color:#9cdcfe">i</span> <span style="color:#c586c0">in</span> <span style="color:#9cdcfe">idx</span>]</pre>
+<p style="margin-top:1.1rem;">
+    DRS requires a <a href="https://www.gurobi.com/academia/academic-program-and-licenses/" style="color:#3273dc; text-decoration:none; border-bottom:1px solid #93c5fd;">free Gurobi academic licence</a>.
+    Full documentation and reproducibility scripts are in the
+    <a href="https://github.com/naveenr414/concept_decisions" style="color:#3273dc; text-decoration:none; border-bottom:1px solid #93c5fd;">GitHub repository</a>.
+</p>
+</div>
+<!-- ═══════════════════════════════════════════════════════ END QUICK START -->
+<!-- Interactive Demo -->
+<div class="section-body" id="demo">
+  <h2>Interactive Demo</h2>
+  <p>
+    Explore concept selection algorithms live on MiniGrid DoorKey-5×5:
+    compare reward, inspect which concepts each method selects, and
+    step through rollouts frame-by-frame.
+  </p>
+  <iframe
+    src="https://conceptrl.streamlit.app?embed=true"
+    width="100%"
+    height="850px"
+    style="border: 1px solid #e0e0e0; border-radius: 5px; display: block;"
+    title="Concept-Based RL Explorer"
+    loading="lazy"
+    allow="fullscreen">
+  </iframe>
+  <p style="margin-top: 0.6rem; font-size: 0.85rem; color: #888;">
+    Open in a new tab:
+    <a href="https://conceptrl.streamlit.app" target="_blank"
+       style="color: #3273dc; border-bottom: 1px solid #93c5fd; text-decoration: none;">
+      conceptrl.streamlit.app
+    </a>
+  </p>
+</div>
+
+<!-- BibTeX -->
+<div class="section-body" id="bibtex">
+  <h2>BibTeX</h2>
+  <div class="bibtex-wrap">
+    <button class="copy-btn" onclick="copyBibtex()">Copy</button>
+    <pre id="bibtex-text">@inproceedings{raman2026decisionrelevant,
+  title     = {Selecting Decision-Relevant Concepts in Reinforcement Learning},
+  author    = {Raman, Naveen and Milani, Stephanie and Fang, Fei},
+  booktitle = {XXX},
+  year      = {2026},
+  url       = {XXX}
+}</pre>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer" style="background:#f5f5f5; padding:2rem 1.5rem; text-align:center;">
+  <div class="content has-text-centered" style="font-size:.875rem; color:#888;">
+    <p>
+      Template adapted from <a href="https://nerfies.github.io" target="_blank" style="color:#888; border-bottom:1px solid #ccc;">Nerfies</a>.
+      Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color:#888; border-bottom:1px solid #ccc;">CC BY-SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Copied to clipboard</div>
+
+<script>
+  function copyBibtex() {
+    const text = document.getElementById('bibtex-text').textContent;
+    navigator.clipboard.writeText(text).then(() => showToast('BibTeX copied to clipboard'));
+  }
+
+  function copyCode() {
+    const text = document.getElementById('code-text').innerText;
+    navigator.clipboard.writeText(text).then(() => showToast('Code copied to clipboard'));
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2000);
+  }
+</script>
+</body>
+</html>
