@@ -1,8 +1,14 @@
 papers:
+  - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
+    authors: "Cindy Peng, Megan Chai, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
+    venue: "CHI '26" 
+    paper_pdf: "https://arxiv.org/abs/2602.08187" 
+    selected: n
+
   - title: "PeerCoPilot: A Language Model-Powered Assistant for Behavioral Health Organizations"
     authors: "Gao Mo<sup>‡</sup>, <b>Naveen Raman</b><sup>‡</sup>, Megan Chai, Cindy Peng, Shannon Pagdon, Nev Jones, Hong Shen, Peggy Swarbrick, and Fei Fang"
     venue: "IAAI '26" 
-    paper_pdf: "https://naveenraman.com/assets/papers/cspnj_iaai.pdf" 
+    paper_pdf: "https://arxiv.org/abs/2511.21721v1" 
     code: "https://github.com/chengolivia/community_services_llm"
     slides: "https://naveenraman.com/assets/slides/cspnj.pdf"
     selected: y
@@ -13,23 +19,18 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2511.15698v1" 
     selected: n
 
+  - title: "Contextual Budget Allocation for Food Rescue Volunteer Engagement"
+    authors: "Ariana Tang, <b>Naveen Raman</b>, Fei Fang, Ryan Shi"
+    venue: "NeurIPS'25 MLxOR Workshop" 
+    paper_pdf: "https://arxiv.org/abs/2509.10777" 
+    selected: n
+
   - title: "Do Concept Bottleneck Models Obey Locality?"
     authors: "<b>Naveen Raman</b>, Mateo Espinosa Zarlenga, Juyeon Heo, Mateja Jamnik"
     venue: "TMLR '25" 
     paper_pdf: "https://arxiv.org/abs/2401.01259"
     code: "https://github.com/naveenr414/Spurious-Concepts" 
     selected: y
-
-  - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
-    authors: "Megan Chai<sup>‡</sup>, Cindy Peng<sup>‡</sup>, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
-    venue: "CHI '26" 
-    selected: n
-
-  - title: "Contextual Budget Allocation for Food Rescue Volunteer Engagement"
-    authors: "Ariana Tang, <b>Naveen Raman</b>, Fei Fang, Ryan Shi"
-    venue: "NeurIPS'25 MLxOR Workshop" 
-    paper_pdf: "https://arxiv.org/abs/2509.10777" 
-    selected: n
 
   - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
     authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
