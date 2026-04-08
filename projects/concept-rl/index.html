@@ -265,7 +265,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2604.04808" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
@@ -548,27 +548,24 @@
 <!-- Interactive Demo -->
 <div class="section-body" id="demo">
   <h2>Interactive Demo</h2>
-  <p>
+  <p> 
     Explore concept selection algorithms live on MiniGrid DoorKey-5×5:
     compare reward, inspect which concepts each method selects, and
     step through rollouts frame-by-frame.
   </p>
-  <iframe
-    src="https://conceptrl.streamlit.app?embed=true"
-    width="100%"
-    height="850px"
-    style="border: 1px solid #e0e0e0; border-radius: 5px; display: block;"
-    title="Concept-Based RL Explorer"
-    loading="lazy"
-    allow="fullscreen">
-  </iframe>
-  <p style="margin-top: 0.6rem; font-size: 0.85rem; color: #888;">
-    Open in a new tab:
-    <a href="https://conceptrl.streamlit.app" target="_blank"
-       style="color: #3273dc; border-bottom: 1px solid #93c5fd; text-decoration: none;">
-      conceptrl.streamlit.app
-    </a>
-  </p>
+
+  <figure style="margin: 1.4rem 0;">
+    <img src="static/images/demo_preview.gif" alt="Concept-Based RL Explorer demo preview"
+         style="border: 1px solid #e0e0e0; border-radius: 5px; display: block; width: 100%; height: auto;">
+    <figcaption>
+      <strong>Demo Preview.</strong> A preview of the interactive explorer — compare algorithms,
+      inspect selected concepts, and step through agent rollouts.
+      <a href="https://conceptrl.streamlit.app" target="_blank"
+         style="color: #3273dc; border-bottom: 1px solid #93c5fd; text-decoration: none;">
+        Open the full demo ↗
+      </a>
+    </figcaption>
+  </figure>
 </div>
 
 <!-- BibTeX -->
@@ -576,12 +573,11 @@
   <h2>BibTeX</h2>
   <div class="bibtex-wrap">
     <button class="copy-btn" onclick="copyBibtex()">Copy</button>
-    <pre id="bibtex-text">@inproceedings{raman2026decisionrelevant,
+    <pre id="bibtex-text">@article{raman2026decisionrelevant,
   title     = {Selecting Decision-Relevant Concepts in Reinforcement Learning},
   author    = {Raman, Naveen and Milani, Stephanie and Fang, Fei},
-  booktitle = {XXX},
+  journal   = {arXiv preprint arXiv:2604.04808},
   year      = {2026},
-  url       = {XXX}
 }</pre>
   </div>
 </div>

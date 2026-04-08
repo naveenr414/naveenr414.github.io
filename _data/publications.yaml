@@ -1,4 +1,12 @@
 papers:
+  - title: "Selecting Decision-Relevant Concepts in Reinforcement Learning"
+    authors: "<b>Naveen Raman</b>, Stephanie Milani, Fei Fang"
+    venue: "ArXiv '26" 
+    paper_pdf: "https://arxiv.org/abs/2604.04808" 
+    code: "https://github.com/naveenr414/concept_decisions"
+    website: "https://naveenraman.com/projects/concept-rl/" 
+    selected: y
+
   - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
     authors: "Cindy Peng, Megan Chai, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
     venue: "CHI '26" 
