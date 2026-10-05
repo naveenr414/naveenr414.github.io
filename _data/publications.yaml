@@ -1,11 +1,24 @@
 papers:
+  - title: "Human Decision-Making with AI Assistance under Correlated Features"
+    authors: "Yanru Guan, <b>Naveen Raman</b>, Fei Fang"
+    venue: "ArXiv '26" 
+    paper_pdf: "https://arxiv.org/abs/2606.20628" 
+    selected: n
+
+  - title: "Healthcare LLM Benchmarks Are Only as Good as Their Explicit Assumptions."
+    authors: "<b>Naveen Raman</b><sup>‡</sup>, Santiago Cortes-Gomez<sup>‡</sup>, Mateo Dulce Rubio<sup>‡</sup>, Fei Fang, Bryan Wilder"
+    venue: "ArXiv '26" 
+    paper_pdf: "https://arxiv.org/abs/2605.22612" 
+    code: "https://github.com/naveenr414/benchmarkcards"
+    selected: n
+
   - title: "Selecting Decision-Relevant Concepts in Reinforcement Learning"
     authors: "<b>Naveen Raman</b>, Stephanie Milani, Fei Fang"
     venue: "ArXiv '26" 
     paper_pdf: "https://arxiv.org/abs/2604.04808" 
     code: "https://github.com/naveenr414/concept_decisions"
     website: "https://naveenraman.com/projects/concept-rl/" 
-    selected: y
+    selected: n
 
   - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
     authors: "Cindy Peng, Megan Chai, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
@@ -68,7 +81,7 @@ papers:
     venue: "ICML '24" 
     paper_pdf: "https://arxiv.org/abs/2405.18217"
     code: "https://github.com/naveenr414/Concept-Learning"
-    selected: y
+    selected: n
 
   - title: "Human Uncertainty in Concept-Based AI Systems"
     authors: "Katherine M. Collins, Matthew Barker, Mateo Espinosa Zarlenga, <b>Naveen Raman</b>, Umang Bhatt, Mateja Jamnik, Ilia Sucholutsky, Adrian Weller, Krishnamurthy Dvijotham"
