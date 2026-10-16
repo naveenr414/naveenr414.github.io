@@ -3,9 +3,9 @@
     - title: "James"
       author: Percival Everett
       url: https://www.goodreads.com/book/show/173754979-james
-    - title: "In the Search for Modern China"
-      author: Jonathan Spence
-      url: https://www.goodreads.com/book/show/162556.The_Search_For_Modern_China 
+    - title: "Restless Empire : China and the World Since 1750"
+      author: Odd Arne Westad
+      url: https://www.goodreads.com/en/book/show/13237700-restless-empire 
     - title: "When the Going was Good"
       author: Graydon Carter
       url: https://www.goodreads.com/book/show/218494525-when-the-going-was-good
@@ -15,7 +15,7 @@
     - title: "Revenge of the Tipping Point"
       author: Malcolm Gladwell
       url: https://www.goodreads.com/book/show/216857785-revenge-of-the-tipping-point
-    - title: "Neve Let Me Go"
+    - title: "Never Let Me Go"
       author: Kazuo Ishiguro 
       url: https://www.goodreads.com/book/show/6334.Never_Let_Me_Go
     - title: "A Good Man is Hard to Find and Other Short Stories"
@@ -84,9 +84,6 @@
     - title: "Demon Copperhead" 
       author: Barbara Kingsolver
       url: https://www.goodreads.com/book/show/60194162-demon-copperhead 
-    - title: "Demon Copperhead" 
-      author: Barbara Kingsolver
-      url: https://www.goodreads.com/book/show/60194162-demon-copperhead 
     - title: "Poor Economics"
       author: Abhijit V. Banerjee and Esther Duflo
       url: https://www.goodreads.com/book/show/10245602-poor-economics
@@ -106,7 +103,7 @@
     - title: "Shoe Dog: A Memoir by the Creator of Nike"
       author: Phil Knight
       url: https://www.goodreads.com/en/book/show/27220736
-    - title: "Noise: A Flaw in Human Judgement"
+    - title: "Noise: A Flaw in Human Judgment"
       author: Daniel Kahneman
       url: https://www.goodreads.com/en/book/show/55339408
     - title: "The Underground Railroad"
@@ -165,7 +162,7 @@
     - title: "Manhattan Transfer"
       author: John Dos Pasos 
       url: https://www.goodreads.com/book/show/126587.Manhattan_Transfer
-    - title: "The Brief Wonderous Life of Oscar Wao" 
+    - title: "The Brief Wondrous Life of Oscar Wao" 
       author: Junot Diaz
       url: https://www.goodreads.com/en/book/show/297673
     - title: "India After Gandhi: The History of the World's Largest Democracy" 
@@ -184,7 +181,7 @@
       author: Jonathan Eig 
       url: https://www.goodreads.com/en/book/show/62039291 
     - title: "The Old Man and the Sea" 
-      author: Ernest Hemmingway 
+      author: Ernest Hemingway 
       url: https://www.goodreads.com/book/show/2165.The_Old_Man_and_the_Sea
     - title: "Ducks: Two Years in the Oil Sands" 
       author: Kate Beaton  
@@ -232,7 +229,7 @@
       url: https://www.goodreads.com/en/book/show/40338436
     - title: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking"
       author: Samin Nosrat
-      url: https://www.goodreads.com/en/book/show/40338436
+      url: https://www.goodreads.com/en/book/show/30753841-salt-fat-acid-heat
     - title: "The Death and Life of Great American Cities"
       author: Jane Jacobs 
       url: https://www.goodreads.com/book/show/30833.The_Death_and_Life_of_Great_American_Cities
@@ -269,14 +266,14 @@
     - title: "Flash Boys" 
       author: Michael Lewis 
       url: https://www.goodreads.com/book/show/24724602-flash-boys 
-    - title: "The Bear and the Nightengale" 
+    - title: "The Bear and the Nightingale" 
       author: Katherine Arden 
       url: https://www.goodreads.com/book/show/25489134-the-bear-and-the-nightingale 
     - title: "Street Gang: The Complete history of Sesame Street" 
       author: Michael Davis 
       url: https://www.goodreads.com/book/show/3111697-street-gang 
     - title: "The Anarchy: The Relentless Rise of the East India Company" 
-      author: Michael Davis 
+      author: William Dalrymple 
       url: https://www.goodreads.com/book/show/50254013-the-anarchy
 - year: '2021'
   books:
@@ -301,7 +298,7 @@
     - title: "Intermediate Microeconomics: A Modern Approach"
       author: Hal Varian
       url: https://www.goodreads.com/book/show/460226.Intermediate_Microeconomics
-    - title: "Botany for Gardners"
+    - title: "Botany for Gardeners"
       author: Brian Capon
       url: https://www.goodreads.com/book/show/594467.Botany_for_Gardeners
     - title: "The Joy Luck Club"
@@ -361,10 +358,10 @@
       author: George Sansom
       url: https://www.goodreads.com/book/show/194460.A_History_of_Japan_1615_1867
     - title: "Eichmann in Jerusalem"
-      author: Hannah Ardent
+      author: Hannah Arendt
       url: https://www.goodreads.com/book/show/52090.Eichmann_in_Jerusalem
     - title: "Macroeconomics"
-      author: George Mankiw
+      author: N. Gregory Mankiw
       url: https://www.goodreads.com/book/show/367587.Macroeconomics
     - title: "Africa: A Biography of the Continent"
       author: John Reader
@@ -402,7 +399,7 @@
     - title: "Osman's Dream"
       author: Caroline Finkel
       url: https://www.goodreads.com/book/show/361130.Osman_s_Dream
-    - title: "A Brief History the Late Ottoman Empire"
+    - title: "A Brief History of the Late Ottoman Empire"
       author: M Sukru Hanioglu
       url: https://www.goodreads.com/book/show/2668423-a-brief-history-of-the-late-ottoman-empire
     - title: "Hegel in 90 Minutes"

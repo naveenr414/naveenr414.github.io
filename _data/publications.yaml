@@ -10,7 +10,7 @@ papers:
     venue: "ArXiv '26" 
     paper_pdf: "https://arxiv.org/abs/2605.22612" 
     code: "https://github.com/naveenr414/benchmarkcards"
-    selected: n
+    selected: y
 
   - title: "Selecting Decision-Relevant Concepts in Reinforcement Learning"
     authors: "<b>Naveen Raman</b>, Stephanie Milani, Fei Fang"
@@ -18,7 +18,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2604.04808" 
     code: "https://github.com/naveenr414/concept_decisions"
     website: "https://naveenraman.com/projects/concept-rl/" 
-    selected: n
+    selected: y
 
   - title: "Large Language Models in Peer-Run Community Behavioral Health Services: Understanding Peer Specialists and Service Users’ Perspectives on Opportunities, Risks, and Mitigation Strategies"
     authors: "Cindy Peng, Megan Chai, Gao Mo, <b>Naveen Raman</b>, Shannon Pagdon, Fei Fang, Nev Jones, Peggy Swarbrick, Hong Shen"
@@ -34,7 +34,7 @@ papers:
     slides: "https://naveenraman.com/assets/slides/cspnj.pdf"
     selected: y
 
-  - title: "RescueLens: : LLM-Powered Triage and Action on Volunteer Feedback for Food Rescue"
+  - title: "RescueLens: LLM-Powered Triage and Action on Volunteer Feedback for Food Rescue"
     authors: "<b>Naveen Raman</b>, Jingwu Tang, Zhiyu Chen, Zheyuan Ryan Shi, Sean Hudson, Ameesh Kapoor, Fei Fang"
     venue: "IAAI '26" 
     paper_pdf: "https://arxiv.org/abs/2511.15698v1" 
@@ -51,14 +51,14 @@ papers:
     venue: "TMLR '25" 
     paper_pdf: "https://arxiv.org/abs/2401.01259"
     code: "https://github.com/naveenr414/Spurious-Concepts" 
-    selected: y
+    selected: n
 
   - title: "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects"
     authors: "Santiago Cortes-Gomez, <b>Naveen Raman</b>, Aarti Singh, Bryan Wilder"
     venue: "ICML '25" 
     paper_pdf: https://arxiv.org/abs/2410.11212
     code: https://github.com/secg5/risk_certificate
-    selected: n
+    selected: y
 
   - title: "Assortment Optimization for Matching Patients and Providers"
     authors: "<b>Naveen Raman</b>, Holly Wiberg"
@@ -66,7 +66,7 @@ papers:
     paper_pdf: https://arxiv.org/abs/2502.10353 
     code: https://github.com/naveenr414/patient-provider
     slides: "https://naveenraman.com/assets/slides/patient_provider.pdf"
-    selected: y
+    selected: n
 
   - title: "Global Rewards in Restless Multi-Armed Bandits"
     authors: "<b>Naveen Raman</b>, Ryan Shi, Fei Fang"
