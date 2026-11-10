@@ -1,4 +1,18 @@
 papers:
+  - title: "Strategic Competition and Convergence in LLM Leaderboards"
+    authors: "<b>Naveen Raman</b>, Fei Fang, Yiling Chen"
+    venue: "ArXiv '26" 
+    paper_pdf: "https://arxiv.org/abs/2611.09780" 
+    selected: y
+
+  - title: "An Extended Study on Global Rewards in Restless Multi-Armed Bandits"
+    authors: "<b>Naveen Raman</b>, Ryan Shi, Sean Hudson, Ameesh Kapoor, Fei Fang"
+    venue: "JAIR '26" 
+    paper_pdf: "https://arxiv.org/abs/2406.00738"
+    code: https://github.com/naveenr414/food-rescue-rmab
+    selected: n
+
+
   - title: "Human Decision-Making with AI Assistance under Correlated Features"
     authors: "Yanru Guan, <b>Naveen Raman</b>, Fei Fang"
     venue: "ArXiv '26" 
@@ -7,14 +21,14 @@ papers:
 
   - title: "Healthcare LLM Benchmarks Are Only as Good as Their Explicit Assumptions."
     authors: "<b>Naveen Raman</b><sup>‡</sup>, Santiago Cortes-Gomez<sup>‡</sup>, Mateo Dulce Rubio<sup>‡</sup>, Fei Fang, Bryan Wilder"
-    venue: "ArXiv '26" 
+    venue: "NeurIPS'26 GenAI4Health Workshop" 
     paper_pdf: "https://arxiv.org/abs/2605.22612" 
     code: "https://github.com/naveenr414/benchmarkcards"
     selected: y
 
   - title: "Selecting Decision-Relevant Concepts in Reinforcement Learning"
     authors: "<b>Naveen Raman</b>, Stephanie Milani, Fei Fang"
-    venue: "ArXiv '26" 
+    venue: "NeurIPS'26 InterpScience Workshop" 
     paper_pdf: "https://arxiv.org/abs/2604.04808" 
     code: "https://github.com/naveenr414/concept_decisions"
     website: "https://naveenraman.com/projects/concept-rl/" 
